@@ -6,7 +6,10 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ToastContainer />
-
-    <App />
+    <WalletConnectProvider>
+      <Suspense>
+        <App />
+      </Suspense>
+    </WalletConnectProvider>
   </StrictMode>,
 )
