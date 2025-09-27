@@ -1,0 +1,1 @@
+export const img_footer_logo = "/images/logo.png";

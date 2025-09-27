@@ -27,3 +27,8 @@ export default defineConfig([
     },
   },
 ])
+
+// jsconfig json
+//  "compilerOptions": {
+// "baseUrl": "./src"
+//   }
