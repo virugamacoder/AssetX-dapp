@@ -68,7 +68,7 @@ import { http, WagmiProvider } from "wagmi";
 
 export const config = getDefaultConfig({
     appName: 'My RainbowKit App',
-    projectId: 'YOUR_PROJECT_ID',
+    projectId: 'c4f79cc821944d9680842e34466bfdb7', // Temporary working project ID
     chains: [sepolia],
     transports: {
         [sepolia.id]: http(`https://eth-sepolia.g.alchemy.com/v2/w9-AuglMlwA3N5eQ-iIjeTqfZLBOzlPz`),

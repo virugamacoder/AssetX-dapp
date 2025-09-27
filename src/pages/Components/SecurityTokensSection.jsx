@@ -6,6 +6,7 @@ import {
     img_image_72x72,
     img_copysvgrepocom_1,
     img_ellipse_24_32x32,
+    img_ellipse_24,
     img_info_circle_svgrepo_com,
     img_metamask_fox_1,
     img_arrow_right_336_white_a700,
@@ -14,7 +15,20 @@ import {
     img_close_md_svgrepo_com,
     img_light_bulb,
     img_frame,
-    img_info_circle_svgrepo_com_24x24
+    img_info_circle_svgrepo_com_24x24,
+    img_image_1_40x36,
+    img_image_5_40x40,
+    img_image_34x34,
+    img_vector_40x40,
+    img_image_10,
+    img_image_14,
+    img_image_40x40,
+    img_image_7,
+    img_image_8,
+    img_image_9,
+    img_image_11,
+    img_image_12,
+    img_image_15
 } from "assets/images";
 import { Text, Input, Heading, Img, Button } from "../../components";
 import AccreditedProfile from "../../components/AccreditedProfile";

@@ -31,7 +31,7 @@ const resetTokenStates = {
     value: 0,
 }
 
-function AddLiquidity() {
+function AddLiquidity({ embedded = false }) {
     const [formLoading, setFormLoading] = useState(false)
     const [stableCoinsModel, setStableCoinsModel] = useState(false)
     // const [manageToken, setManageToken] = useState(false)
@@ -220,26 +220,28 @@ function AddLiquidity() {
     }
 
     return (
-        <div className="mt-[3.75rem] flex items-center self-stretch md:flex-col">
+        <div className="flex items-center self-stretch md:flex-col">
             {formLoading && <LoaderComponent />}
-            <div className="w-[41%] mx-auto flex flex-col items-center gap-[1.25rem] md:self-stretch">
-                <div className="flex items-center gap-[1.25rem] w-full">
-                    <Link to={ROUTE_PATH.LIQUIDITY} >
-                        <Img
-                            src={img_arrow_down_brand_color_1}
-                            alt="Arrow Down Seven"
-                            className="h-[1.50rem] w-[1.50rem]"
-                        />
-                    </Link>
-                    <Heading
-                        size="heading4xl"
-                        as="h4"
-                        className="text-[1.50rem] font-bold text-gray-50 md:text-[1.38rem]"
-                    >
-                        Add Liquidity
-                    </Heading>
-                </div>
-                <div className="border border-solid border-gray-900_02 bg-gray-900_01 p-[1.88rem] md:w-full sm:p-[1.25rem] w-full">
+            <div className="w-full flex flex-col items-center gap-[1.25rem]">
+                {!embedded && (
+                    <div className="flex items-center gap-[1.25rem] w-full">
+                        <Link to={ROUTE_PATH.LIQUIDITY} >
+                            <Img
+                                src={img_arrow_down_brand_color_1}
+                                alt="Arrow Down Seven"
+                                className="h-[1.50rem] w-[1.50rem]"
+                            />
+                        </Link>
+                        <Heading
+                            size="heading4xl"
+                            as="h4"
+                            className="text-[1.50rem] font-bold text-gray-50 md:text-[1.38rem]"
+                        >
+                            Add Liquidity
+                        </Heading>
+                    </div>
+                )}
+                <div className="border border-solid border-gray-900_02 bg-gray-900_01 p-[1.88rem] w-full sm:p-[1.25rem]">
                     <div className="flex flex-col items-start">
                         <div className="relative h-[14.38rem] content-center self-stretch md:h-auto">
                             <div className="mx-auto flex flex-1 flex-col gap-[1.25rem]">

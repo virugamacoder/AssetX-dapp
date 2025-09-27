@@ -60,18 +60,12 @@ function PopularMarketsPage() {
     return (
         <div className="mt-[3.75rem] self-stretch">
             <div className="flex flex-col items-start gap-[1.63rem]">
-                <Heading
-                    size="heading7xl"
-                    as="h1"
-                    className="text-[2.50rem] font-bold text-gray-50 md:text-[2.38rem] sm:text-[2.25rem]"
-                >
-                    Popular Markets
-                </Heading>
+
 
                 <Heading
                     size="heading7xl"
                     as="h1"
-                    className="text-[2.50rem] font-bold text-gray-50 md:text-[2.38rem] sm:text-[2.25rem]"
+                    className="mx-auto text-[2.50rem] font-bold text-gray-50 md:text-[2.38rem] sm:text-[2.25rem]"
                 >
                     Coming Soon..
                 </Heading>

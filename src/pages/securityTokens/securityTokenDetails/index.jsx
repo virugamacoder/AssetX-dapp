@@ -286,7 +286,7 @@ function SecurityTokenDetails() {
                             return (
                                 <div
                                     key={`STOdetail-${index}`}
-                                    className="flex items-center justify-between border border-gray-900_02 border border-solid  rounded-[0px] h-[50px] px-[16px]">
+                                    className="flex items-center justify-between border border-gray-900_02  border-solid  rounded-[0px] h-[50px] px-[16px]">
                                     <Heading
                                         size="heading5xl"
                                         as="h3"

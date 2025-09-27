@@ -19,7 +19,7 @@ root.render(
     <Provider store={store}>
       <ToastContainer />
       <WalletConnectProvider>
-        <Suspense>
+        <Suspense fallback={<div style={{color: 'white', padding: '20px', fontSize: '18px', backgroundColor: '#000', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>Loading Application...</div>}>
           <RouterProvider router={Router} />
         </Suspense>
       </WalletConnectProvider>
