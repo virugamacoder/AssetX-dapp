@@ -2,14 +2,14 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import ROUTE_PATH from "./ROUTE_PATH";
 import RootLayout from "layouts/rootLayout";
 import ComponentsPage from "pages/Components";
-import { AddLiquidity, CorporateKYCPage, IndividualKYCPage, InvestmentDetailPage, InvestmentsPage, KYCPage, LiquidityPage, LiquiditySettings, MarketDetailPage, PopularMarketsPage, SecurityTokenDetails, SecurityTokensPage, SwapPage } from "pages";
+import { AddLiquidity, CorporateKYCPage, IndividualKYCPage, InvestmentDetailPage, InvestmentsPage, KYCPage, LiquidityPage, LiquiditySettings, MarketDetailPage, NotFoundPage, PopularMarketsPage, SecurityTokenDetails, SecurityTokensPage, SwapPage } from "pages";
 
 const Router = createBrowserRouter([
     {
         path: ROUTE_PATH.ROOT,
         element: <RootLayout />,
         // element: <ProtectedRoute Element={<RootLayout />} />,
-        // errorElement: <ErrorPage />,
+        errorElement: <NotFoundPage />,
         children: [
             { index: true, element: <Navigate to={ROUTE_PATH.SECTURITY_TOKENS} /> },
             { path: `${ROUTE_PATH.KYC}`, element: <KYCPage /> },
@@ -27,6 +27,8 @@ const Router = createBrowserRouter([
             { path: `${ROUTE_PATH.SWAP}`, element: <SwapPage /> },
             { path: `${ROUTE_PATH.SWAP_SETTINGS}`, element: <LiquiditySettings /> },
             { path: `${ROUTE_PATH.COMPONENTS}`, element: <ComponentsPage /> },
+            // Catch-all route for 404 pages
+            { path: "*", element: <NotFoundPage /> },
         ],
     },
 ])

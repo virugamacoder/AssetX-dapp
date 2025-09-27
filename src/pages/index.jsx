@@ -11,6 +11,7 @@ import IndividualKYCPage from "./kyc/individualKyc"
 import SwapPage from "./swap"
 import PopularMarketsPage from "./popularMarkets/popularMarketsPage"
 import MarketDetailPage from "./popularMarkets/marketDetailPage"
+import NotFoundPage from "./NotFound"
 
 export {
     InvestmentsPage,
@@ -25,5 +26,6 @@ export {
     CorporateKYCPage,
     IndividualKYCPage,
     PopularMarketsPage,
-    MarketDetailPage
+    MarketDetailPage,
+    NotFoundPage
 }
