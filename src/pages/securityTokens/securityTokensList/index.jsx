@@ -1,7 +1,7 @@
 import { useConnectModal } from '@rainbow-me/rainbowkit';
 import { createColumnHelper } from '@tanstack/react-table';
 import { img_arrowdown, img_image_3, img_polygonlogofreelogovectorsnet_1 } from 'assets/images';
-import { Button, Heading, Img, Input, Loading, ReactTable, SelectBox, Text } from 'components'
+import { Button, Heading, Img, Input, ReactTable, SelectBox, Text } from 'components'
 import AccreditedProfile from 'components/AccreditedProfile';
 import { CloseSVG } from 'components/Input/close';
 import UserProfile2 from 'components/UserProfile2';
@@ -10,7 +10,7 @@ import { useCustomQuery } from 'hooks';
 import React, { Suspense, useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { setSelectedObjectForListSTO } from '../../../redux/securityTokens/listSTO';
+import { setSelectedObjectForListSTO } from 'redux/securityTokens/listSTO';
 import ROUTE_PATH from 'routes/ROUTE_PATH';
 import { handleResponse } from 'services/apiConfig';
 import { getImageFromPinata } from 'services/pinata';
@@ -251,7 +251,7 @@ function SecurityTokensPage() {
                                         size='md'
                                         shape="square"
                                         color="brand_color_0_green_800"
-                                        className="self-stretch px-[16px] font-bold uppercase tracking-[0.00rem] sm:px-[1.25rem]"
+                                        className="self-stretch px-[16px] font-bold uppercase tracking-[0.00rem] sm:px-[1.25rem] capitalize"
                                         onClick={() => setCreateSTOModel(true)}
                                     >
                                         Create WERC20
@@ -261,7 +261,7 @@ function SecurityTokensPage() {
                                         size='md'
                                         shape="square"
                                         color="brand_color_0_green_800"
-                                        className="self-stretch px-[16px] font-bold uppercase tracking-[0.00rem] sm:px-[1.25rem]"
+                                        className="self-stretch px-[16px] font-bold uppercase tracking-[0.00rem] sm:px-[1.25rem] capitalize"
                                         onClick={() => openConnectModal()}
                                     >
                                         CONNECT WALLET
@@ -276,7 +276,7 @@ function SecurityTokensPage() {
                                     {/* <div className="flex gap-[1.50rem] md:flex-col"> */}
                                     <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[1.50rem]">
                                         {!myStoListLoading ?
-                                            <Suspense fallback={<Loading message="Loading your tokens..." size="sm" />}>
+                                            <Suspense fallback={<div>Loading feed...</div>}>
                                                 {/* {myStoListData?.data?.slice(0, 6)?.map((d, index) => ( */}
                                                 {myStoListData?.data?.map((d, index) => (
                                                     <AccreditedProfile
@@ -314,7 +314,7 @@ function SecurityTokensPage() {
                                     Featured
                                 </Heading>
                                 <div className="w-full grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[1.50rem]">
-                                    <Suspense fallback={<Loading message="Loading featured tokens..." size="sm" />}>
+                                    <Suspense fallback={<div>Loading feed...</div>}>
                                         {getFeaturedStoData?.data?.map((d, index) => (
                                             <UserProfile2
                                                 userHeading={d?.stoTokenName}
@@ -414,7 +414,7 @@ function SecurityTokensPage() {
                                             size='md'
                                             shape="square"
                                             color="brand_color_0_green_800"
-                                            className="self-stretch px-[16px] font-bold uppercase tracking-[0.00rem] sm:px-[1.25rem]"
+                                            className="self-stretch px-[16px] font-bold uppercase tracking-[0.00rem] sm:px-[1.25rem] capitalize"
                                             onClick={() => onResetFilters()}
                                         >
                                             Reset filters
