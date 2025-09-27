@@ -511,7 +511,7 @@ function UBOVerificationCorporateKYC(props) {
                 </div>
                 <div className={`border flex flex-col border-gray-900_02 gap-[0.75rem] p-[1.25rem]`}>
                     <Text as="p" className="!text-[.75rem] !font-medium capitalize leading-[1.00rem] text-brand_color-1">
-                        For Dexreal Launchpad Issuers and IDexreal DEX Applicants, please also enclose the most recent financial documents (balance sheet, P&L statement or Annual Returns), Certificate of Incumbency and Company Organization Chart showing Ownership Structure (signed copy). All documents must be dated within the last 3 months.
+                        For AssetX Launchpad Issuers and IAssetX DEX Applicants, please also enclose the most recent financial documents (balance sheet, P&L statement or Annual Returns), Certificate of Incumbency and Company Organization Chart showing Ownership Structure (signed copy). All documents must be dated within the last 3 months.
                     </Text>
 
                     <div className="flex w-full">

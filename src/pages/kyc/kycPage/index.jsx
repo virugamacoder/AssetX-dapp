@@ -45,7 +45,7 @@ function KYCPage() {
                     as="h6"
                     className="text-[2.5rem] font-bold text-white-a700 md:text-[1.63rem] sm:text-[1.50rem]"
                 >
-                    Dexreal KYC
+                    AssetX KYC
                 </Heading>
                 {/*  */}
                 <div className="border border-solid border-gray-900_02 bg-gray-900 py-[0.75rem] pl-[1.25rem] pr-[0.75rem] flex gap-[2.5rem] items-center">

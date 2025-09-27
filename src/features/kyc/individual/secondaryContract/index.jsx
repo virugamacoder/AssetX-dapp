@@ -119,7 +119,7 @@ function SecondaryContractIndividualKYC(props) {
                             as="p"
                             className="!text-[0.75rem] font-medium leading-[1.38rem] text-brand_color-1"
                         >
-                            2. Start a chat with <span>@dexreal_verification_bot</span>
+                            2. Start a chat with <span>@AssetX</span>
                         </Text>
                         <Text
                             as="p"

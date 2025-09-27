@@ -12,7 +12,7 @@ export default function Footer({ ...props }) {
             as="p"
             className="self-end font-inter text-[0.88rem] font-normal text-black-400"
           >
-            © 2024 Dexreal.io
+            © AssetX
           </Text>
         </div>
         <div className="flex w-[56%] items-center justify-between gap-[1.25rem] md:w-full">
