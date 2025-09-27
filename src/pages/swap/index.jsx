@@ -3,6 +3,7 @@ import { useWertWidget } from '@wert-io/module-react-component'
 import { Button, Heading, Img, Input, LoaderComponent } from "components"
 import UserProfile3 from "components/UserProfile3"
 import { EMPTY_ADDRESS, UNISWAP_ROUTER_ADDRESS } from "data/constant"
+import { img_settings_svgrepo_com, img_light_bulb, img_frame } from "assets/images"
 import { MySTOModel } from "features/addLiquidity"
 import SelectToken from "features/swap/selectToken"
 import { useCustomQuery } from "hooks"
@@ -448,7 +449,7 @@ function SwapPage() {
                     </Heading>
                     <Link to={ROUTE_PATH.SWAP_SETTINGS}>
                         <Img
-                            src="images/img_settings_svgrepo_com.svg"
+                            src={img_settings_svgrepo_com}
                             alt="Settings Image"
                             className=" h-[1.75rem] w-[1.75rem]"
                         />
@@ -501,7 +502,7 @@ function SwapPage() {
                         // onClick={() => setSwapToken(!swapToken)}
                         >
                             <Img
-                                src="images/img_light_bulb.svg"
+                                src={img_light_bulb}
                                 alt="Lightbulb Image"
                                 className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[3.00rem] w-[3.00rem]"
                             />
@@ -529,7 +530,7 @@ function SwapPage() {
                                         {/* {lpTokenOne?.swapRate?.toString()?.slice(0, 6)}{" "}{lpTokenOne?.tokeSymbol} PER {" "}{lpTokenTwo?.swapRate?.toString()?.slice(0, 6)}{" "}{lpTokenTwo?.tokeSymbol} */}
                                     </Heading>
                                     <Img
-                                        src="images/img_frame.png"
+                                        src={img_frame}
                                         alt="Frame Image"
                                         className="h-[1.25rem] w-[1.25rem] object-cover"
                                     />

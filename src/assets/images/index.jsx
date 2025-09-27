@@ -50,6 +50,14 @@ import img_light_bulb from "./img_light_bulb.svg";
 import img_frame from "./img_frame.png";
 import img_info_circle_svgrepo_com_24x24 from "./img_info_circle_svgrepo_com_24x24.png";
 import img_calendar_svgrepo_com from "./img_calendar_svgrepo_com.png";
+import img_ellipse_24 from "./img_ellipse_24.png";
+import img_image_7 from "./img_image_7.png";
+import img_image_8 from "./img_image_8.png";
+import img_image_9 from "./img_image_9.png";
+import img_image_11 from "./img_image_11.png";
+import img_image_15 from "./img_image_15.png";
+import img_group_947 from "./img_group_947.png";
+import img_image_40x40 from "./img_image_40x40.png";
 import img_image_1_40x36 from "./img_image_1_40x36.png";
 import img_image_5_40x40 from "./img_image_5_40x40.png";
 import img_image_34x34 from "./img_image_34x34.png";
@@ -139,6 +147,14 @@ export {
     img_frame,
     img_info_circle_svgrepo_com_24x24,
     img_calendar_svgrepo_com,
+    img_ellipse_24,
+    img_image_7,
+    img_image_8,
+    img_image_9,
+    img_image_11,
+    img_image_15,
+    img_group_947,
+    img_image_40x40,
     img_image_1_40x36,
     img_image_5_40x40,
     img_image_34x34,

@@ -3,6 +3,16 @@ import { Button, Input, Text, Heading, Img, CheckBox, SelectBox } from "../../co
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { CloseSVG } from "../../components/Input/close.jsx";
+import { 
+    img_search, img_arrowdown, img_filter, img_arrow_down_brand_color_1,
+    img_image_2, img_globe, img_music, img_group_30, img_warning, img_info,
+    img_secure_svgrepo_com, img_image_438x780, img_image_48x48, img_arrow_up,
+    img_checkmark, img_info_circle_svgrepo_com, img_vector, img_vector_8x14,
+    img_copy_svgrepo_com, img_metamaskfox_1_gray_900_02, img_mail_svgrepo_com,
+    img_close_md_svgrepo_com, img_metamask_fox_1, img_copysvgrepocom_1,
+    img_vector_20x20, img_light_bulb, img_calendar_svgrepo_com, img_image_230x408,
+    img_image_1
+} from "../../assets/images";
 import UserProfile from "../../components/UserProfile";
 import UserProfile1 from "../../components/UserProfile1";
 import UserRegistration from "../../components/UserRegistration";
@@ -93,7 +103,7 @@ export default function ComponentsPage() {
                                             onChange={(e) => setSearchBarValue1(e.target.value)}
                                             prefix={
                                                 <Img
-                                                    src="images/img_search.svg"
+                                                    src={img_search}
                                                     alt="Search"
                                                     className="my-[0.13rem] h-[0.75rem] w-[1.25rem]"
                                                 />
@@ -108,7 +118,7 @@ export default function ComponentsPage() {
                                         <SelectBox
                                             shape="square"
                                             indicator={
-                                                <Img src="images/img_arrowdown.svg" alt="Arrow Down" className="h-[0.75rem] w-[0.50rem]" />
+                                                <Img src={img_arrowdown} alt="Arrow Down" className="h-[0.75rem] w-[0.50rem]" />
                                             }
                                             name="Industry Dropdown"
                                             placeholder={`Industry`}
@@ -118,7 +128,7 @@ export default function ComponentsPage() {
                                         <SelectBox
                                             shape="square"
                                             indicator={
-                                                <Img src="images/img_arrowdown.svg" alt="Arrow Down" className="h-[0.75rem] w-[0.50rem]" />
+                                                <Img src={img_arrowdown} alt="Arrow Down" className="h-[0.75rem] w-[0.50rem]" />
                                             }
                                             name="Stage Dropdown"
                                             placeholder={`Stage`}
@@ -128,7 +138,7 @@ export default function ComponentsPage() {
                                         <SelectBox
                                             shape="square"
                                             indicator={
-                                                <Img src="images/img_arrowdown.svg" alt="Arrow Down" className="h-[0.75rem] w-[0.50rem]" />
+                                                <Img src={img_arrowdown} alt="Arrow Down" className="h-[0.75rem] w-[0.50rem]" />
                                             }
                                             name="Type Dropdown"
                                             placeholder={`Type`}
@@ -139,7 +149,7 @@ export default function ComponentsPage() {
                                             size="md"
                                             variant="fill"
                                             shape="square"
-                                            leftIcon={<Img src="images/img_filter.svg" alt="Filter" className="h-[1.00rem] w-[1.00rem]" />}
+                                            leftIcon={<Img src={img_filter} alt="Filter" className="h-[1.00rem] w-[1.00rem]" />}
                                             className="ml-[1.00rem] min-w-[5.38rem] gap-[0.50rem] border border-solid border-gray-900_02 px-[0.81rem] font-bold capitalize tracking-[0.00rem] md:ml-0"
                                         >
                                             Filter
@@ -150,9 +160,9 @@ export default function ComponentsPage() {
                                     <div className="mr-[26.50rem] flex gap-[2.13rem] md:mr-0 md:flex-col">
                                         <UserProfile />
                                         <UserProfile
-                                            userImage="images/img_image_230x408.png"
+                                            userImage={img_image_230x408}
                                             publicSalesButton="Public Sales"
-                                            securityTokenImage="images/img_image_1.png"
+                                            securityTokenImage={img_image_1}
                                         />
                                     </div>
                                 </div>
@@ -162,13 +172,13 @@ export default function ComponentsPage() {
                             <div className="flex items-center md:flex-col">
                                 <div className="flex w-[34%] items-center justify-center md:w-full">
                                     <Img
-                                        src="images/img_arrow_down_brand_color_1.svg"
+                                        src={img_arrow_down_brand_color_1}
                                         alt="Arrow Down Image"
                                         className="h-[1.50rem] w-[1.50rem]"
                                     />
                                     <div className="flex flex-1 items-center gap-[1.25rem] px-[1.88rem] sm:px-[1.25rem]">
                                         <Img
-                                            src="images/img_image_2.png"
+                                            src={img_image_2}
                                             alt="Trsr-drc-1 Image"
                                             className="h-[3.75rem] w-[3.75rem] object-cover"
                                         />
@@ -182,18 +192,18 @@ export default function ComponentsPage() {
                                     </div>
                                 </div>
                                 <div className="flex flex-1 gap-[1.00rem] pl-[7.00rem] pr-[3.50rem] md:self-stretch md:px-[1.25rem]">
-                                    <Img src="images/img_globe.svg" alt="Globe Icon" className="h-[2.00rem] w-[2.00rem]" />
-                                    <Img src="images/img_music.svg" alt="Music Icon" className="h-[2.00rem] w-[2.00rem]" />
-                                    <Img src="images/img_group_30.svg" alt="Group Icon" className="h-[2.00rem] w-[2.00rem]" />
+                                    <Img src={img_globe} alt="Globe Icon" className="h-[2.00rem] w-[2.00rem]" />
+                                    <Img src={img_music} alt="Music Icon" className="h-[2.00rem] w-[2.00rem]" />
+                                    <Img src={img_group_30} alt="Group Icon" className="h-[2.00rem] w-[2.00rem]" />
                                     <Button
                                         size="sm"
                                         variant="fill"
                                         shape="square"
                                         className="w-[2.00rem] border border-solid border-gray-900_02 px-[0.50rem]"
                                     >
-                                        <Img src="images/img_warning.svg" />
+                                        <Img src={img_warning} />
                                     </Button>
-                                    <Img src="images/img_info.svg" alt="Info Icon" className="h-[2.00rem] w-[2.00rem]" />
+                                    <Img src={img_info} alt="Info Icon" className="h-[2.00rem] w-[2.00rem]" />
                                 </div>
                             </div>
                             <div className="flex flex-col gap-[1.25rem]">
@@ -206,7 +216,7 @@ export default function ComponentsPage() {
                                 </Text>
                                 <div className="flex items-center">
                                     <Img
-                                        src="images/img_secure_svgrepo_com.png"
+                                        src={img_secure_svgrepo_com}
                                         alt="Security Image"
                                         className="h-[1.25rem] w-[1.25rem] object-cover"
                                     />
@@ -230,7 +240,7 @@ export default function ComponentsPage() {
                         <div className="mt-[2.38rem] self-stretch">
                             <div className="flex items-start gap-[2.50rem] md:flex-col">
                                 <div className="flex flex-1 flex-col gap-[1.25rem] md:self-stretch">
-                                    <Img src="images/img_image_438x780.png" alt="Overview Image" className="h-[27.38rem] object-cover" />
+                                    <Img src={img_image_438x780} alt="Overview Image" className="h-[27.38rem] object-cover" />
                                     <div className="flex flex-col gap-[1.25rem]">
                                         <div className="flex flex-col items-start gap-[1.38rem] border border-solid border-gray-900_02 bg-gray-900_01 p-[1.88rem] sm:p-[1.25rem]">
                                             <Heading
@@ -289,7 +299,7 @@ export default function ComponentsPage() {
                                                     <div className="flex flex-col items-start gap-[1.25rem]">
                                                         <div className="flex items-center gap-[1.00rem] self-stretch">
                                                             <Img
-                                                                src="images/img_image_48x48.png"
+                                                                src={img_image_48x48}
                                                                 alt="Albert Pinkney Image"
                                                                 className="h-[3.00rem] w-[3.00rem] rounded-[24px] object-cover"
                                                             />
@@ -354,13 +364,13 @@ export default function ComponentsPage() {
                                                                                         </Heading>
                                                                                         {props?.expanded ? (
                                                                                             <Img
-                                                                                                src="images/img_arrow_up.svg"
+                                                                                                src={img_arrow_up}
                                                                                                 alt="Faq Header Icon"
                                                                                                 className="mt-[0.25rem] h-[0.38rem] sm:w-full"
                                                                                             />
                                                                                         ) : (
                                                                                             <Img
-                                                                                                src="images/img_checkmark.svg"
+                                                                                                src={img_checkmark}
                                                                                                 alt="Faq Collapse Icon"
                                                                                                 className="mt-[0.25rem] h-[0.38rem] sm:w-full"
                                                                                             />
@@ -431,13 +441,13 @@ export default function ComponentsPage() {
                                                     Soft Cap
                                                 </Heading>
                                                 <Img
-                                                    src="images/img_info_circle_svgrepo_com.svg"
+                                                    src={img_info_circle_svgrepo_com}
                                                     alt="Soft Cap Icon"
                                                     className="h-[0.75rem] w-[0.75rem] self-end"
                                                 />
                                             </div>
                                             <Img
-                                                src="images/img_vector.png"
+                                                src={img_vector}
                                                 alt="Soft Cap Vector"
                                                 className="ml-[7.88rem] h-[0.50rem] object-cover md:ml-0"
                                             />
@@ -445,7 +455,7 @@ export default function ComponentsPage() {
                                                 <div className="h-[1.00rem] w-[0.13rem] bg-gradient" />
                                             </div>
                                             <Img
-                                                src="images/img_vector_8x14.png"
+                                                src={img_vector_8x14}
                                                 alt="Pre-sale Goal Vector"
                                                 className="ml-[7.88rem] h-[0.50rem] object-cover md:ml-0"
                                             />
@@ -458,7 +468,7 @@ export default function ComponentsPage() {
                                                     Pre-Sale Goal
                                                 </Heading>
                                                 <Img
-                                                    src="images/img_info_circle_svgrepo_com.svg"
+                                                    src={img_info_circle_svgrepo_com}
                                                     alt="Pre-sale Goal Icon"
                                                     className="h-[0.75rem] w-[0.75rem] self-end"
                                                 />
@@ -474,7 +484,7 @@ export default function ComponentsPage() {
                                                                 Participants
                                                             </Heading>
                                                             <Img
-                                                                src="images/img_info_circle_svgrepo_com.svg"
+                                                                src={img_info_circle_svgrepo_com}
                                                                 alt="Participants Icon"
                                                                 className="h-[0.75rem] w-[0.75rem] self-end"
                                                             />
@@ -547,7 +557,7 @@ export default function ComponentsPage() {
                                                         0x5D57C...66c7c
                                                     </Heading>
                                                     <Img
-                                                        src="images/img_copy_svgrepo_com.png"
+                                                        src={img_copy_svgrepo_com}
                                                         alt="Copy Icon"
                                                         className="h-[1.00rem] w-[1.00rem] object-cover"
                                                     />
@@ -559,7 +569,7 @@ export default function ComponentsPage() {
                                                     rightIcon={
                                                         <div className="flex h-[1.00rem] w-[1.00rem] items-center justify-center">
                                                             <Img
-                                                                src="images/img_metamaskfox_1_gray_900_02.svg"
+                                                                src={img_metamaskfox_1_gray_900_02}
                                                                 alt="Metamask Fox 1"
                                                                 className="h-[1.00rem] w-[1.00rem]"
                                                             />
@@ -745,7 +755,7 @@ export default function ComponentsPage() {
                                                                 Pre-Sale
                                                             </Heading>
                                                             <Img
-                                                                src="images/img_info_circle_svgrepo_com.svg"
+                                                                src={img_info_circle_svgrepo_com}
                                                                 alt="Pre-sale Icon"
                                                                 className="h-[1.00rem] w-[1.00rem] self-end"
                                                             />
@@ -792,7 +802,7 @@ export default function ComponentsPage() {
                                                     Investment Stage
                                                 </Heading>
                                                 <Img
-                                                    src="images/img_info_circle_svgrepo_com.svg"
+                                                    src={img_info_circle_svgrepo_com}
                                                     alt="Investment Stage Icon"
                                                     className="h-[1.00rem] w-[1.00rem] self-end"
                                                 />
@@ -814,7 +824,7 @@ export default function ComponentsPage() {
                                                             Closed
                                                         </Heading>
                                                         <Img
-                                                            src="images/img_info_circle_svgrepo_com.svg"
+                                                            src={img_info_circle_svgrepo_com}
                                                             alt="Closed Stage Icon"
                                                             className="h-[0.75rem] w-[0.75rem] self-end"
                                                         />
@@ -836,7 +846,7 @@ export default function ComponentsPage() {
                                                             Token Claim
                                                         </Heading>
                                                         <Img
-                                                            src="images/img_info_circle_svgrepo_com.svg"
+                                                            src={img_info_circle_svgrepo_com}
                                                             alt="Token Claim Icon"
                                                             className="h-[0.75rem] w-[0.75rem] self-end"
                                                         />
@@ -954,7 +964,7 @@ export default function ComponentsPage() {
                                             </a>
                                             <div className="flex items-center gap-[0.50rem] self-stretch">
                                                 <Img
-                                                    src="images/img_mail_svgrepo_com.png"
+                                                    src={img_mail_svgrepo_com}
                                                     alt="Email Icon"
                                                     className="h-[1.25rem] w-[1.25rem] object-cover"
                                                 />
@@ -979,7 +989,7 @@ export default function ComponentsPage() {
                                 <Heading size="heading4xl" as="h4" className="text-[1.50rem] font-bold text-gray-50 md:text-[1.38rem]">
                                     Dashboard
                                 </Heading>
-                                <Img src="images/img_close_md_svgrepo_com.svg" alt="Close Icon" className="h-[1.50rem] w-[1.50rem]" />
+                                <Img src={img_close_md_svgrepo_com} alt="Close Icon" className="h-[1.50rem] w-[1.50rem]" />
                             </div>
                             <TabList className="mt-[2.50rem] flex flex-wrap items-end justify-center gap-[2.25rem]">
                                 <Tab className="mt-[1.38rem] text-[0.88rem] font-medium text-brand_color-1">Register To Invest</Tab>
@@ -995,7 +1005,7 @@ export default function ComponentsPage() {
                                             <div>
                                                 <div>
                                                     <div className="flex items-center gap-[0.50rem] border border-solid border-gray-900_02 bg-gray-900 px-[0.75rem] py-[0.63rem]">
-                                                        <Img src="images/img_search.svg" alt="Search Icon" className="h-[1.25rem] w-[1.25rem]" />
+                                                        <Img src={img_search} alt="Search Icon" className="h-[1.25rem] w-[1.25rem]" />
                                                         <Heading
                                                             size="textxs"
                                                             as="p"
@@ -1027,7 +1037,7 @@ export default function ComponentsPage() {
                                                             shape="square"
                                                             rightIcon={
                                                                 <Img
-                                                                    src="images/img_metamask_fox_1.svg"
+                                                                    src={img_metamask_fox_1}
                                                                     alt="Metamask Fox 1"
                                                                     className="h-[1.00rem] w-[1.00rem]"
                                                                 />
@@ -1042,7 +1052,7 @@ export default function ComponentsPage() {
                                                             shape="square"
                                                             rightIcon={
                                                                 <Img
-                                                                    src="images/img_copysvgrepocom_1.png"
+                                                                    src={img_copysvgrepocom_1}
                                                                     alt="Copy-svgrepo-com 1"
                                                                     className="h-[1.00rem] w-[1.00rem] object-cover"
                                                                 />
@@ -1057,7 +1067,7 @@ export default function ComponentsPage() {
                                                             Public Sale Conditions
                                                         </Heading>
                                                         <Img
-                                                            src="images/img_info_circle_svgrepo_com.svg"
+                                                            src={img_info_circle_svgrepo_com}
                                                             alt="Public Sale Conditions Icon"
                                                             className="h-[1.00rem] w-[1.00rem]"
                                                         />
@@ -1101,7 +1111,7 @@ export default function ComponentsPage() {
                                                         My Investment Allowance
                                                     </Heading>
                                                     <Img
-                                                        src="images/img_info_circle_svgrepo_com.svg"
+                                                        src={img_info_circle_svgrepo_com}
                                                         alt="My Investment Allowance Icon"
                                                         className="h-[1.00rem] w-[1.00rem]"
                                                     />
@@ -1145,7 +1155,7 @@ export default function ComponentsPage() {
                                                             Last investment transaction status
                                                         </Heading>
                                                         <Img
-                                                            src="images/img_info_circle_svgrepo_com.svg"
+                                                            src={img_info_circle_svgrepo_com}
                                                             alt="Last Investment Status Icon"
                                                             className="h-[0.88rem] w-[0.88rem] self-end"
                                                         />
@@ -1170,7 +1180,7 @@ export default function ComponentsPage() {
                                                             </Heading>
                                                             <div className="flex items-center gap-[0.50rem] border border-solid border-gray-900_02 bg-gray-900_01 p-[0.63rem]">
                                                                 <Img
-                                                                    src="images/img_vector_20x20.png"
+                                                                    src={img_vector_20x20}
                                                                     alt="Investment Vector Icon"
                                                                     className="h-[1.25rem] w-[1.25rem] rounded-[10px] object-cover"
                                                                 />
@@ -1189,7 +1199,7 @@ export default function ComponentsPage() {
                                                             </Heading>
                                                             <div className="flex items-center gap-[0.50rem] border border-solid border-gray-900_02 bg-gray-900_01 p-[0.63rem]">
                                                                 <Img
-                                                                    src="images/img_vector_20x20.png"
+                                                                    src={img_vector_20x20}
                                                                     alt="Investment Vector Icon Two"
                                                                     className="h-[1.25rem] w-[1.25rem] rounded-[10px] object-cover"
                                                                 />
@@ -1200,7 +1210,7 @@ export default function ComponentsPage() {
                                                         </div>
                                                     </div>
                                                     <Img
-                                                        src="images/img_light_bulb.svg"
+                                                        src={img_light_bulb}
                                                         alt="Lightbulb Icon"
                                                         className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[3.00rem] w-[3.00rem]"
                                                     />
@@ -1214,7 +1224,7 @@ export default function ComponentsPage() {
                                                     0 USDT
                                                 </Heading>
                                                 <Img
-                                                    src="images/img_vector_20x20.png"
+                                                    src={img_vector_20x20}
                                                     alt="Balance Vector"
                                                     className="ml-[0.50rem] h-[1.25rem] w-[1.25rem] rounded-[10px] object-cover"
                                                 />
@@ -1248,7 +1258,7 @@ Investment Memorandum in respect of this token sale."
                             ))}
                             <div className="text_cyan_A100_border mt-[1.25rem] flex items-center justify-center gap-[1.00rem] border border-solid bg-gradient2 p-[1.13rem] sm:flex-col">
                                 <Img
-                                    src="images/img_calendar_svgrepo_com.png"
+                                    src={img_calendar_svgrepo_com}
                                     alt="Calendar Icon"
                                     className="h-[2.50rem] w-[2.50rem] object-cover sm:w-full"
                                 />

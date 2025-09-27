@@ -1,9 +1,10 @@
 import ReactSwitch from "react-switch";
 import { Img, Heading } from "./..";
+import { img_image_1_40x36, img_user } from "assets/images";
 import React from "react";
 
 export default function UserProfile6({
-    userImage = "images/img_image_1_40x36.png",
+    userImage = img_image_1_40x36,
     headingText = "Arb Whitelist Era",
     tokensCounter = "0 Tokens",
     isChecked = false,
@@ -39,7 +40,7 @@ export default function UserProfile6({
                 className="react_switch"
                 onChange={(e) => onClick(e)} checked={isChecked}
             />
-            {/* <Img src="images/img_user.svg" alt="User Image" className="h-[1.50rem]" /> */}
+            {/* <Img src={img_user} alt="User Image" className="h-[1.50rem]" /> */}
         </div>
     );
 }

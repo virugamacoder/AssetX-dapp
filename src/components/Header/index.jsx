@@ -1,4 +1,5 @@
 import { Img, Heading, SelectBox, Text } from "./..";
+import { img_header_logo, img_arrowright336, img_polygonlogofreelogovectorsnet_1, img_metamask_fox_1 } from "assets/images";
 import React from "react";
 
 const dropDownOptions = [
@@ -13,7 +14,7 @@ export default function Header({ ...props }) {
       {...props}
       className={`${props.className} flex sm:flex-col self-stretch justify-between items-center gap-[1.25rem] py-[1.63rem] sm:py-[1.25rem] border-white-a700_1e border-b border-solid`}
     >
-      <Img src="images/img_header_logo.png" alt="Header Logo" className="h-[2.00rem] w-[8.75rem] object-contain" />
+      <Img src={img_header_logo} alt="Header Logo" className="h-[2.00rem] w-[8.75rem] object-contain" />
       <ul className="flex flex-wrap gap-[3.00rem]">
         <li>
           <a href="#" className="bg-gradient bg-clip-text">
@@ -57,13 +58,13 @@ export default function Header({ ...props }) {
         <SelectBox
           shape="square"
           indicator={
-            <Img src="images/img_arrowright336.svg" alt="Arrow Right-[#336]" className="h-[0.75rem] w-[0.50rem]" />
+            <Img src={img_arrowright336} alt="Arrow Right-[#336]" className="h-[0.75rem] w-[0.50rem]" />
           }
           getOptionLabel={(e) => (
             <>
               <div className="flex items-center">
                 <Img
-                  src="images/img_polygonlogofreelogovectorsnet_1.png"
+                  src={img_polygonlogofreelogovectorsnet_1}
                   alt="Polygon-logo-freelogovectors.net 1"
                   className="h-[0.75rem] w-[1.25rem]"
                 />
@@ -78,7 +79,7 @@ export default function Header({ ...props }) {
         />
         <div className="flex flex-1 items-center justify-center border border-solid border-gray-900_02 bg-gray-900_01 p-[0.63rem]">
           <a href="#">
-            <Img src="images/img_metamask_fox_1.svg" alt="Metamask Icon" className="h-[1.25rem] w-[1.25rem]" />
+            <Img src={img_metamask_fox_1} alt="Metamask Icon" className="h-[1.25rem] w-[1.25rem]" />
           </a>
           <Heading
             size="headings"
@@ -95,7 +96,7 @@ export default function Header({ ...props }) {
             >
               o MATIC
             </Heading>
-            <Img src="images/img_arrowright336.svg" alt="Balance Icon" className="h-[0.25rem]" />
+            <Img src={img_arrowright336} alt="Balance Icon" className="h-[0.25rem]" />
           </div>
         </div>
       </div>

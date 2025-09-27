@@ -1,6 +1,7 @@
 import { useConnectModal } from '@rainbow-me/rainbowkit'
 import { Button, Heading, Img } from 'components'
 import { useCustomQuery } from 'hooks'
+import { img_settings_svgrepo_com } from 'assets/images'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import ROUTE_PATH from 'routes/ROUTE_PATH'
@@ -35,7 +36,7 @@ function LiquidityPage() {
                 </Heading>
                 {/* <Link to={ROUTE_PATH.LIQUIDITY_SETTINGS}>
                     <Img
-                        src="images/img_settings_svgrepo_com.svg"
+                        src={img_settings_svgrepo_com}
                         alt="Settings Image"
                         className="h-[1.75rem] w-[1.75rem]"
                     />

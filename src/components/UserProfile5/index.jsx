@@ -1,11 +1,12 @@
 import { Heading, Img, Input } from "./..";
+import { img_arrow_right_336_white_a700, img_image_12 } from "assets/images";
 import React from "react";
 
 export default function UserProfile5({
     // tokenOne = "12",
     tokenValue = "0",
     tokenName = "MATIC",
-    tokenImage = "images/img_image_12.png",
+    tokenImage = img_image_12,
     balanceLabel = "Balance:",
     onInputChange = () => { },
     balanceValue = "0",
@@ -49,7 +50,7 @@ export default function UserProfile5({
                                 {tokenName}
                             </Heading>
                             <Img
-                                src="images/img_arrow_right_336_white_a700.svg"
+                                src={img_arrow_right_336_white_a700}
                                 alt="Arrow Image"
                                 className="ml-[1.13rem] h-[0.25rem]"
                             />

@@ -1,4 +1,4 @@
-import { img_image_3 } from "assets/images";
+import { img_image_3, img_polygonlogofreelogovectorsnet_1 } from "assets/images";
 import { Button, Heading, Img, Text } from "./..";
 import React from "react";
 import { getImageFromPinata } from "services/pinata";
@@ -29,7 +29,7 @@ export default function AccreditedProfile({
                                 }}
                             />
                             {/* <Img
-                            src="images/img_polygonlogofreelogovectorsnet_1.png"
+                            src={img_polygonlogofreelogovectorsnet_1}
                             alt="Ssol1 Logo"
                             className="relative mt-[-1.25rem] h-[1.25rem] w-[1.25rem] object-cover"
                         /> */}

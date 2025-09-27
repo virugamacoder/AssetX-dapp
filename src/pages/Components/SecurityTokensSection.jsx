@@ -70,56 +70,56 @@ const accreditedList = [
     { accreditedText: "Accredited", ssolOneText: "SSOL1 -", seaSolarText: "SEA Solar Series 1", zeroText: "0" },
 ];
 const whitelistUsersList = [
-    { userImage: "images/img_image_1_40x36.png", headingText: "Arb Whitelist Era", tokensCounter: "0 Tokens" },
-    { userImage: "images/img_image_5_40x40.png", headingText: "Compound", tokensCounter: "0 Tokens" },
-    { userImage: "images/img_image_34x34.png", headingText: "Gemini Token List", tokensCounter: "0 Tokens" },
-    { userImage: "images/img_vector_40x40.png", headingText: "Roll Social Money", tokensCounter: "0 Tokens" },
+    { userImage: img_image_1_40x36, headingText: "Arb Whitelist Era", tokensCounter: "0 Tokens" },
+    { userImage: img_image_5_40x40, headingText: "Compound", tokensCounter: "0 Tokens" },
+    { userImage: img_image_34x34, headingText: "Gemini Token List", tokensCounter: "0 Tokens" },
+    { userImage: img_vector_40x40, headingText: "Roll Social Money", tokensCounter: "0 Tokens" },
 ];
 const gamingPortfolioList = [
     {
-        userImage: "images/img_vector_40x40.png",
+        userImage: img_vector_40x40,
         userName: "wCKGP",
         userDescription: "OTP - Coach K Gaming Portfolio",
         userInfo: "INFO",
         userNeeds: "Needs accreditation",
     },
     {
-        userImage: "images/img_image_10.png",
+        userImage: img_image_10,
         userName: "wMWERC20",
         userDescription: "InvestaX",
         userInfo: "INFO",
         userNeeds: "Needs accreditation",
     },
     {
-        userImage: "images/img_vector_40x40.png",
+        userImage: img_vector_40x40,
         userName: "wCKGP",
         userDescription: "OTP - Coach K Gaming Portfolio",
         userInfo: "INFO",
         userNeeds: "Needs accreditation",
     },
     {
-        userImage: "images/img_vector_40x40.png",
+        userImage: img_vector_40x40,
         userName: "wCKGP",
         userDescription: "OTP - Coach K Gaming Portfolio",
         userInfo: "INFO",
         userNeeds: "Needs accreditation",
     },
     {
-        userImage: "images/img_vector_40x40.png",
+        userImage: img_vector_40x40,
         userName: "wCKGP",
         userDescription: "OTP - Coach K Gaming Portfolio",
         userInfo: "INFO",
         userNeeds: "Needs accreditation",
     },
     {
-        userImage: "images/img_image_14.png",
+        userImage: img_image_14,
         userName: "wCKGP",
         userDescription: "OTP - Coach K Gaming Portfolio",
         userInfo: "Wrapped Ixs Token",
         userNeeds: "0",
     },
     {
-        userImage: "images/img_vector_40x40.png",
+        userImage: img_vector_40x40,
         userName: "wCKGP",
         userDescription: "OTP - Coach K Gaming Portfolio",
         userInfo: "INFO",
@@ -133,11 +133,11 @@ const tableData = [
         countryHeader: "United States of America",
         industryHeader: "Technology",
         networkHeader: "base",
-        imageEighteen: "images/img_image_40x40.png",
-        imageNineteen: "images/img_ellipse_24.png",
+        imageEighteen: img_image_40x40,
+        imageNineteen: img_ellipse_24,
     },
     {
-        imageEighteen: "images/img_image_7.png",
+        imageEighteen: img_image_7,
         nameHeader: "CKGP",
         issuerHeader: "CoachK",
         countryHeader: "Thailand",
@@ -146,7 +146,7 @@ const tableData = [
         networkHeader: "polygon",
     },
     {
-        imageEighteen: "images/img_image_8.png",
+        imageEighteen: img_image_8,
         nameHeader: "SSOL1",
         issuerHeader: "FRACSIO",
         countryHeader: "Singapore",
@@ -155,7 +155,7 @@ const tableData = [
         networkHeader: "polygon",
     },
     {
-        imageEighteen: "images/img_image_9.png",
+        imageEighteen: img_image_9,
         nameHeader: "TAU",
         issuerHeader: "NeuralNet Technologies LLC",
         countryHeader: "Singapore",
@@ -164,7 +164,7 @@ const tableData = [
         networkHeader: "polygon",
     },
     {
-        imageEighteen: "images/img_image_10.png",
+        imageEighteen: img_image_10,
         nameHeader: "IXAPE",
         issuerHeader: "InvestaX",
         countryHeader: "Singapore",
@@ -173,7 +173,7 @@ const tableData = [
         networkHeader: "polygon",
     },
     {
-        imageEighteen: "images/img_image_11.png",
+        imageEighteen: img_image_11,
         nameHeader: "MWERC20",
         issuerHeader: "Millennium Sapphire",
         countryHeader: "United States of America",
@@ -857,7 +857,7 @@ export default function SecurityTokensSection() {
                                                 <UserProfile3
                                                     headingText="2"
                                                     maxButton="Max"
-                                                    userImage="images/img_image_12.png"
+                                                    userImage={img_image_12}
                                                     userName="MATIC"
                                                     balanceLabel="Balance:"
                                                     balanceValue="0 MATIC"
@@ -1014,7 +1014,7 @@ export default function SecurityTokensSection() {
                                             <UserProfile5 />
                                             <UserProfile5
                                                 twelve="4.57392"
-                                                userImage="images/img_image_15.png"
+                                                userImage={img_image_15}
                                                 userText="USDC.e"
                                                 userBalanceLabel="Balance:"
                                                 userBalance="0 USDC.e"

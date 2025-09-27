@@ -1,4 +1,5 @@
 import { Text, Img } from "./..";
+import { img_footer_logo, img_facebook, img_trash, img_warning_black_400, img_info_black_400 } from "assets/images";
 import React from "react";
 
 export default function Footer({ ...props }) {
@@ -6,7 +7,7 @@ export default function Footer({ ...props }) {
     <footer {...props} className={`${props.className} flex self-stretch items-center`}>
       <div className="flex w-full items-center justify-between gap-[1.25rem] md:flex-col">
         <div className="flex w-[20%] items-center justify-between gap-[1.25rem] md:w-full">
-          <Img src="images/img_footer_logo.png" alt="Footer Logo" className="h-[1.50rem] w-[6.50rem] object-contain" />
+          <Img src={img_footer_logo} alt="Footer Logo" className="h-[1.50rem] w-[6.50rem] object-contain" />
           <Text
             size="text_14px_regular"
             as="p"
@@ -17,10 +18,10 @@ export default function Footer({ ...props }) {
         </div>
         <div className="flex w-[56%] items-center justify-between gap-[1.25rem] md:w-full">
           <div className="flex w-[24%] justify-between gap-[1.25rem]">
-            <Img src="images/img_facebook.svg" alt="Facebook Icon" className="h-[1.75rem] w-[1.75rem]" />
-            <Img src="images/img_trash.svg" alt="Trash Icon" className="h-[1.75rem] w-[1.75rem]" />
-            <Img src="images/img_warning_black_400.svg" alt="Warning Icon" className="h-[1.75rem] w-[1.75rem]" />
-            <Img src="images/img_info_black_400.svg" alt="Info Icon" className="h-[1.75rem] w-[1.75rem]" />
+            <Img src={img_facebook} alt="Facebook Icon" className="h-[1.75rem] w-[1.75rem]" />
+            <Img src={img_trash} alt="Trash Icon" className="h-[1.75rem] w-[1.75rem]" />
+            <Img src={img_warning_black_400} alt="Warning Icon" className="h-[1.75rem] w-[1.75rem]" />
+            <Img src={img_info_black_400} alt="Info Icon" className="h-[1.75rem] w-[1.75rem]" />
           </div>
           <Text
             size="text_14px_regular"
