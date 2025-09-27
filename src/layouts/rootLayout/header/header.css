@@ -1,5 +1,6 @@
 header .isActive {
-    background: linear-gradient(90deg, #34AD6B 0%, #0E8042 100%);
+    background: linear-gradient(90deg, #06B6D4 0%, #0891B2 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
