@@ -276,7 +276,7 @@ function SecurityTokensPage() {
                                     {/* <div className="flex gap-[1.50rem] md:flex-col"> */}
                                     <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[1.50rem]">
                                         {!myStoListLoading ?
-                                            <Suspense fallback={<div>Loading feed...</div>}>
+                                            <Suspense fallback={<Loading message="Loading your tokens..." size="sm" />}>
                                                 {/* {myStoListData?.data?.slice(0, 6)?.map((d, index) => ( */}
                                                 {myStoListData?.data?.map((d, index) => (
                                                     <AccreditedProfile
@@ -314,7 +314,7 @@ function SecurityTokensPage() {
                                     Featured
                                 </Heading>
                                 <div className="w-full grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[1.50rem]">
-                                    <Suspense fallback={<div>Loading feed...</div>}>
+                                    <Suspense fallback={<Loading message="Loading featured tokens..." size="sm" />}>
                                         {getFeaturedStoData?.data?.map((d, index) => (
                                             <UserProfile2
                                                 userHeading={d?.stoTokenName}
