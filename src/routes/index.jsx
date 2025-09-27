@@ -9,7 +9,6 @@ const Router = createBrowserRouter([
         // element: <ProtectedRoute Element={<RootLayout />} />,
         // errorElement: <ErrorPage />,
         children: [
-        
         ],
     },
 ])
