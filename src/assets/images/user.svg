@@ -1,0 +1,10 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 52.5C50 45.5965 41.0457 40 30 40C18.9543 40 10 45.5965 10 52.5M30 32.5C23.0964 32.5 17.5 26.9035 17.5 20C17.5 13.0964 23.0964 7.5 30 7.5C36.9035 7.5 42.5 13.0964 42.5 20C42.5 26.9035 36.9035 32.5 30 32.5Z" stroke="url(#paint0_angular_860_941)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<radialGradient id="paint0_angular_860_941" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 30) rotate(90) scale(22.5 20)">
+<stop offset="0.386094" stop-color="#92FDB0"/>
+<stop offset="0.718753" stop-color="#75FFC5"/>
+<stop offset="0.998512" stop-color="#7FF0FF"/>
+</radialGradient>
+</defs>
+</svg>
