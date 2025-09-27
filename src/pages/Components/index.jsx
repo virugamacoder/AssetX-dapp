@@ -1290,7 +1290,7 @@ Investment Memorandum in respect of this token sale."
                                             Subscribe for Updates
                                         </Heading>
                                         <Text size="textxl" as="p" className="font-inter text-[1.25rem] font-light text-white-a700_99">
-                                            Get the latest Dexreal news, all spam-free.
+                                            Get the latest AssetX news, all spam-free.
                                         </Text>
                                         <div className="flex justify-center gap-[1.00rem] self-stretch sm:flex-col">
                                             <Input
