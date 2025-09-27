@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
-import { setSelectedObjectForListSTO } from '../../../redux/securityTokens/listSTO';
+import { setSelectedObjectForListSTO } from 'redux/securityTokens/listSTO';
 import ROUTE_PATH from 'routes/ROUTE_PATH';
 import { getAllSTOsRQ, getLaunchpadCountryRQ, getLaunchpadIndustryRQ, getLaunchpadStageRQ, LAUNCHPAD_KEYS } from 'services/launchpad';
 import { getAllSTOsApiFunction } from 'services/launchpad/launchpadApiFunctions';

@@ -1,27 +1,28 @@
-import { StrictMode, Suspense } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import WalletConnectProvider from "providers/WalletConnectProvider";
-import store from "./redux/store";
-import { ToastContainer } from 'react-toastify';
-import { Provider } from "react-redux";
-import { RouterProvider } from "react-router-dom";
-import Router from "routes";
-import { Loading } from "components";
+import React, { Suspense } from "react";
+import { createRoot } from "react-dom/client";
 import "./styles/tailwind.css";
 import "./styles/index.css";
 import "./styles/font.css";
+import { RouterProvider } from "react-router-dom";
+import Router from "routes";
+import WalletConnectProvider from "providers/WalletConnectProvider";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Provider } from "react-redux";
+import store from "redux/store";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+const container = document.getElementById("root");
+const root = createRoot(container);
+
+root.render(
+  <React.StrictMode>
     <Provider store={store}>
       <ToastContainer />
       <WalletConnectProvider>
-        <Suspense fallback={<Loading message="Initializing application..." />}>
+        <Suspense>
           <RouterProvider router={Router} />
         </Suspense>
       </WalletConnectProvider>
-    </Provider>    
-  </StrictMode>,
-)
+    </Provider>
+  </React.StrictMode>
+);
