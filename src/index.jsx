@@ -13,7 +13,6 @@ import "./styles/index.css";
 import "./styles/font.css";
 import "react-toastify/dist/ReactToastify.css";
 
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>

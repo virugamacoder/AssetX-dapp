@@ -10,7 +10,7 @@ import { useCustomQuery } from 'hooks';
 import React, { Suspense, useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { setSelectedObjectForListSTO } from 'redux/securityTokens/listSTO';
+import { setSelectedObjectForListSTO } from '../../../redux/securityTokens/listSTO';
 import ROUTE_PATH from 'routes/ROUTE_PATH';
 import { handleResponse } from 'services/apiConfig';
 import { getImageFromPinata } from 'services/pinata';
