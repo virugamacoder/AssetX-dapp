@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li:focus-visible {
+    outline: none;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+@layer base {
+    :root {
+        /*------Color variables------*/
+        --black_400: #c4c4c4;
+        --black_900: #09090b;
+        --black_900_00: #09090b00;
+        --black_600_06: #00000099;
+        --black_900_01: #000000;
+        --blue_gray_900: #233447;
+        --brand_color_0: #34ad6b;
+        --brand_color_1: #828282;
+        --cyan_a100: #7eefff;
+        --cyan_a100_1e: #7eefff1e;
+        --cyan_a100_33: #7eefff33;
+        --deep_orange_800: #cd6116;
+        --gray_400: #c0ad9e;
+        --gray_400_01: #d7c1b3;
+        --gray_50: #fcfcfd;
+        --gray_900: #181818;
+        --gray_900_01: #111114;
+        --gray_900_02: #212126;
+        --gray_900_03: #161616;
+        --gray_900_04: #212121;
+        --gray_900_7a: #1818187a;
+        --gray_900_99: #11111499;
+        --green_800: #0d7f41;
+        --green_a200_1e: #92fdb01e;
+        --green_a200_33: #92fdb033;
+        --lime_900: #763d16;
+        --red_a700: #ff0000;
+        --teal_a200: #75fec5;
+        --teal_a200_1e: #75fec51e;
+        --teal_a200_33: #75fec533;
+        --text: #92fdb0;
+        --white_a700: #ffffff;
+        --white_a700_14: #ffffff14;
+        --white_a700_1e: #ffffff1e;
+        --white_a700_99: #ffffff99;
+        --yellow_900: #e4761b;
+        --yellow_900_01: #e4751f;
+        --yellow_900_02: #f6851b;
+        --yellow_900_03: #e2761b;
+
+        /*------Gradient variables------*/
+        --gradient4: 90deg, #34AD6B 0%, #0E8042 100%;
+        --gradient5: from 180deg at 50% 50%, #7FF0FF -0.54deg, #92FDB0 138.99deg, #75FFC5 258.75deg, #7FF0FF 359.46deg, #92FDB0 498.99deg;
+        --gradient5_12: from 180deg at 50% 50%, rgba(127, 240, 255, .12) -0.54deg, rgba(146, 253, 176, .12) 138.99deg, rgba(117, 255, 197, .12) 258.75deg, rgba(127, 240, 255, .12) 359.46deg, rgba(146, 253, 176, .12) 498.99deg;
+
+
+        /*------Border radius variables------*/
+        --radius-xs: 1px;
+        --radius-sm: 2px;
+        --radius-md: 10px;
+        --radius-lg: 12px;
+        --radius-xl: 16px;
+        --radius-2xl: 20px;
+        --radius-3xl: 24px;
+        --radius-4xl: 30px;
+        --radius-5xl: 36px;
+
+        /*------Spacing variables------*/
+        --space-xs: 0.13rem;
+        --space-sm: 0.25rem;
+        --space-md: 0.38rem;
+        --space-lg: 0.5rem;
+        --space-xl: 0.56rem;
+        --space-2xl: 0.63rem;
+        --space-3xl: 0.75rem;
+        --space-4xl: 0.88rem;
+        --space-5xl: 1rem;
+        --space-6xl: 1.13rem;
+        --space-7xl: 1.25rem;
+        --space-8xl: 1.38rem;
+        --space-9xl: 1.5rem;
+        --space-10xl: 1.63rem;
+        --space-11xl: 1.75rem;
+        --space-12xl: 1.88rem;
+        --space-13xl: 2.13rem;
+        --space-14xl: 3.06rem;
+    }
+}
+
+@layer components {
+
+    /*-------------------------------------
+  Container CSS
+--------------------------------------*/
+    .container-xs {
+        @apply w-full mx-auto max-w-[80.25rem];
+    }
+}

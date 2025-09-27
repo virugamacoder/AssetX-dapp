@@ -3,7 +3,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import ROUTE_PATH from "routes/ROUTE_PATH";
-import "./header.css";const dropDownOptions = [
+import "./header.css";import { img_header_logo } from "assets/images";
+const dropDownOptions = [
     { label: "Option1", value: "option1" },
     { label: "Option2", value: "option2" },
     { label: "Option3", value: "option3" },
@@ -13,11 +14,11 @@ export default function Header({ ...props }) {
     return (
         <header
             {...props}
-            className={`${props.className} flex sm:flex-col self-stretch justify-between items-center gap-[1.25rem] py-[1.63rem] sm:py-[1.25rem] border-white-a700_1e border-b border-solid`}
+            className={`${props.className} flex sm:flex-col w-full justify-between items-center gap-[1.25rem] py-[1.63rem] px-[1.5rem] sm:py-[1.25rem] border-white-a700_1e border-b border-solid`}
         >
-            {/* <Link to={ROUTE_PATH.ROOT} >
+            <Link to={ROUTE_PATH.ROOT} >
                 <Img src={img_header_logo} alt="Header Logo" className="h-[2.00rem] w-[8.75rem] object-contain" />
-            </Link> */}
+            </Link>
             <ul className="flex flex-wrap gap-[2.00rem]">
                 <li>
                     <NavLink
