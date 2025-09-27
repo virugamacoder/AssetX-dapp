@@ -1,6 +1,6 @@
 import { useConnectModal } from '@rainbow-me/rainbowkit';
 import { createColumnHelper } from '@tanstack/react-table';
-import { img_arrowdown, img_image_3, img_polygonlogofreelogovectorsnet_1 } from 'assets/images';
+import { img_arrowdown, img_image_3, img_polygonlogofreelogovectorsnet_1, img_search } from 'assets/images';
 import { Button, Heading, Img, Input, ReactTable, SelectBox, Text } from 'components'
 import AccreditedProfile from 'components/AccreditedProfile';
 import { CloseSVG } from 'components/Input/close';
@@ -323,7 +323,6 @@ function SecurityTokensPage() {
                                                 industryName={d?.industry}
                                                 countryName={d?.country}
                                                 stoImage={d?.stoImage}
-
                                                 // {...d}
                                                 key={"featuredList" + index}
                                                 onTradeButtonClick={() => navigate(`${ROUTE_PATH.SECTURITY_TOKENS}/${d.rwaToken}`)}
@@ -361,7 +360,7 @@ function SecurityTokensPage() {
                                             setSearchBarValue10(e.target.value)
                                         }
                                         prefix={
-                                            <Img src="images/img_search.svg" alt="Search" className="my-[0.13rem] h-[20px] w-[20px]" />
+                                            <Img src={img_search} alt="Search" className="my-[0.13rem] h-[20px] w-[20px]" />
                                         }
                                         suffix={
                                             searchBarValue10?.length > 0 ? (

@@ -1,4 +1,21 @@
-import { img_polygonlogofreelogovectorsnet_1 } from "assets/images";
+import { 
+    img_polygonlogofreelogovectorsnet_1,
+    img_search,
+    img_arrowdown,
+    img_arrow_down_brand_color_1,
+    img_image_72x72,
+    img_copysvgrepocom_1,
+    img_ellipse_24_32x32,
+    img_info_circle_svgrepo_com,
+    img_metamask_fox_1,
+    img_arrow_right_336_white_a700,
+    img_settings_svgrepo_com,
+    img_close,
+    img_close_md_svgrepo_com,
+    img_light_bulb,
+    img_frame,
+    img_info_circle_svgrepo_com_24x24
+} from "assets/images";
 import { Text, Input, Heading, Img, Button } from "../../components";
 import AccreditedProfile from "../../components/AccreditedProfile";
 import ExpertModeProfile from "../../components/ExpertModeProfile";
@@ -324,7 +341,7 @@ export default function SecurityTokensSection() {
                                         value={searchBarValue10}
                                         onChange={(e) => setSearchBarValue10(e.target.value)}
                                         prefix={
-                                            <Img src="images/img_search.svg" alt="Search" className="my-[0.13rem] h-[0.75rem] w-[1.25rem]" />
+                                            <Img src={img_search} alt="Search" className="my-[0.13rem] h-[0.75rem] w-[1.25rem]" />
                                         }
                                         suffix={
                                             searchBarValue10?.length > 0 ? (
@@ -341,7 +358,7 @@ export default function SecurityTokensSection() {
                                             shape="square"
                                             rightIcon={
                                                 <Img
-                                                    src="images/img_arrowdown.svg"
+                                                    src={img_arrowdown}
                                                     alt="Arrow Down"
                                                     className="my-[0.25rem] h-[0.50rem] w-[0.50rem]"
                                                 />
@@ -357,7 +374,7 @@ export default function SecurityTokensSection() {
                                             shape="square"
                                             rightIcon={
                                                 <Img
-                                                    src="images/img_arrowdown.svg"
+                                                    src={img_arrowdown}
                                                     alt="Arrow Down"
                                                     className="mb-[0.25rem] mt-[0.13rem] h-[0.50rem] w-[0.50rem]"
                                                 />
@@ -373,7 +390,7 @@ export default function SecurityTokensSection() {
                                             shape="square"
                                             rightIcon={
                                                 <Img
-                                                    src="images/img_arrowdown.svg"
+                                                    src={img_arrowdown}
                                                     alt="Arrow Down"
                                                     className="mb-[0.25rem] mt-[0.13rem] h-[0.50rem] w-[0.50rem]"
                                                 />
@@ -409,12 +426,12 @@ export default function SecurityTokensSection() {
                                 <div className="flex items-center justify-between gap-[1.25rem] self-stretch sm:flex-col">
                                     <div className="flex flex-1 items-center sm:self-stretch">
                                         <Img
-                                            src="images/img_arrow_down_brand_color_1.svg"
+                                            src={img_arrow_down_brand_color_1}
                                             alt="Arrow Down Three Image"
                                             className="h-[1.50rem] w-[1.50rem]"
                                         />
                                         <Img
-                                            src="images/img_image_72x72.png"
+                                            src={img_image_72x72}
                                             alt="Image Thirtyone"
                                             className="ml-[1.75rem] h-[4.50rem] w-[4.50rem] rounded-[36px] object-cover"
                                         />
@@ -433,7 +450,7 @@ export default function SecurityTokensSection() {
                                             shape="square"
                                             rightIcon={
                                                 <Img
-                                                    src="images/img_copysvgrepocom_1.png"
+                                                    src={img_copysvgrepocom_1}
                                                     alt="Copy-svgrepo-com 1"
                                                     className="h-[1.00rem] w-[1.00rem] object-cover"
                                                 />
@@ -443,7 +460,7 @@ export default function SecurityTokensSection() {
                                             0x5D57C...66c7c
                                         </Button>
                                         <Img
-                                            src="images/img_ellipse_24_32x32.png"
+                                            src={img_ellipse_24_32x32}
                                             alt="Image Thirtytwo"
                                             className="h-[2.00rem] w-[2.00rem] rounded-[16px] object-cover"
                                         />
@@ -531,7 +548,7 @@ export default function SecurityTokensSection() {
                                             Create wBASE-01 Vault
                                         </Heading>
                                         <Img
-                                            src="images/img_info_circle_svgrepo_com.svg"
+                                            src={img_info_circle_svgrepo_com}
                                             alt="Info Image"
                                             className="h-[1.25rem] w-[1.25rem] sm:w-full"
                                         />
@@ -571,7 +588,7 @@ export default function SecurityTokensSection() {
                                                                     shape="square"
                                                                     rightIcon={
                                                                         <Img
-                                                                            src="images/img_copysvgrepocom_1.png"
+                                                                            src={img_copysvgrepocom_1}
                                                                             alt="Copy-svgrepo-com 1"
                                                                             className="h-[1.00rem] w-[1.00rem] object-cover"
                                                                         />
@@ -586,7 +603,7 @@ export default function SecurityTokensSection() {
                                                                     shape="square"
                                                                     rightIcon={
                                                                         <Img
-                                                                            src="images/img_metamask_fox_1.svg"
+                                                                            src={img_metamask_fox_1}
                                                                             alt="Metamask Fox 1"
                                                                             className="h-[1.00rem] w-[1.00rem]"
                                                                         />
@@ -642,7 +659,7 @@ export default function SecurityTokensSection() {
                                                     All
                                                 </Heading>
                                                 <Img
-                                                    src="images/img_arrow_right_336_white_a700.svg"
+                                                    src={img_arrow_right_336_white_a700}
                                                     alt="Arrow Right Image"
                                                     className="mb-[0.25rem] h-[0.25rem] self-end"
                                                 />
@@ -693,43 +710,13 @@ export default function SecurityTokensSection() {
                                         Liquidity
                                     </Heading>
                                     <Img
-                                        src="images/img_settings_svgrepo_com.svg"
+                                        src={img_settings_svgrepo_com}
                                         alt="Settings Image"
                                         className="mr-[5.00rem] h-[1.75rem] w-[1.75rem]"
                                     />
                                 </div>
                                 <div className="flex w-[88%] flex-col items-center border border-solid border-gray-900_02 bg-gray-900_01 p-[1.88rem] md:w-full sm:p-[1.25rem]">
                                     <div className="self-stretch border border-solid border-gray-900_02 bg-gray-900 p-[1.25rem]">
-                                        <div className="flex flex-col gap-[1.00rem]">
-                                            <div className="flex justify-center">
-                                                <div className="flex flex-1 items-center gap-[0.63rem]">
-                                                    <Img
-                                                        src="images/img_info_circle_svgrepo_com_24x24.png"
-                                                        alt="Info Image"
-                                                        className="h-[1.50rem] w-[1.50rem] object-cover"
-                                                    />
-                                                    <Heading size="headingxl" as="h6" className="text-[1.13rem] font-bold text-white-a700">
-                                                        Disclaimer
-                                                    </Heading>
-                                                </div>
-                                                <Img
-                                                    src="images/img_close_md_svgrepo_com.svg"
-                                                    alt="Close Image"
-                                                    className="h-[1.50rem] w-[1.50rem]"
-                                                />
-                                            </div>
-                                            <Heading
-                                                as="p"
-                                                className="font-inter text-[0.88rem] font-normal leading-[1.25rem] text-brand_color-1"
-                                            >
-                                                By accessing and utilizing Liquidity Pools, you acknowledge and accept the inherent risks
-                                                involved, including market volatility, impermanent loss, regulatory changes and/or smart
-                                                contract vulnerabilities. IX Swap makes no guarantees of profit and expressly disclaims
-                                                responsibility for any losses you may suffer due to such risks. You acknowledge that your access
-                                                and use of Liquidity Pools shall be at your own risk, and you should conduct independent
-                                                research and are encouraged to seek professional advice before doing so.
-                                            </Heading>
-                                        </div>
                                     </div>
                                     <Button
                                         shape="square"
@@ -771,7 +758,7 @@ export default function SecurityTokensSection() {
                             <div className="mt-[4.88rem] flex w-[46%] flex-col gap-[1.25rem] md:w-full">
                                 <div className="flex items-center gap-[1.25rem]">
                                     <Img
-                                        src="images/img_arrow_down_brand_color_1.svg"
+                                        src={img_arrow_down_brand_color_1}
                                         alt="Arrow Down Five"
                                         className="h-[1.50rem] w-[1.50rem]"
                                     />
@@ -790,7 +777,7 @@ export default function SecurityTokensSection() {
                                                 Slippage tolerance
                                             </Heading>
                                             <Img
-                                                src="images/img_info_circle_svgrepo_com.svg"
+                                                src={img_info_circle_svgrepo_com}
                                                 alt="Info Image"
                                                 className="h-[1.00rem] w-[1.00rem] self-end"
                                             />
@@ -818,7 +805,7 @@ export default function SecurityTokensSection() {
                                                         Transaction deadline
                                                     </Heading>
                                                     <Img
-                                                        src="images/img_info_circle_svgrepo_com.svg"
+                                                        src={img_info_circle_svgrepo_com}
                                                         alt="Info Image Thirtysix"
                                                         className="h-[1.00rem] w-[1.00rem] self-end"
                                                     />
@@ -850,7 +837,7 @@ export default function SecurityTokensSection() {
                             <div className="flex flex-1 flex-col items-start gap-[1.25rem] md:self-stretch">
                                 <div className="flex items-center gap-[1.25rem] self-stretch">
                                     <Img
-                                        src="images/img_arrow_down_brand_color_1.svg"
+                                        src={img_arrow_down_brand_color_1}
                                         alt="Arrow Down Seven"
                                         className="h-[1.50rem] w-[1.50rem]"
                                     />
@@ -877,7 +864,7 @@ export default function SecurityTokensSection() {
                                                 /> */}
                                             </div>
                                             <Img
-                                                src="images/img_close.svg"
+                                                src={img_close}
                                                 alt="Close One Image"
                                                 className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[3.00rem] w-[3.00rem]"
                                             />
@@ -932,7 +919,7 @@ export default function SecurityTokensSection() {
                                             Select a token to swap
                                         </Heading>
                                         <Img
-                                            src="images/img_close_md_svgrepo_com.svg"
+                                            src={img_close_md_svgrepo_com}
                                             alt="Close Image"
                                             className="h-[1.50rem] w-[1.50rem]"
                                         />
@@ -946,7 +933,7 @@ export default function SecurityTokensSection() {
                                         value={searchBarValue4}
                                         onChange={(e) => setSearchBarValue4(e.target.value)}
                                         prefix={
-                                            <Img src="images/img_search.svg" alt="Search" className="my-[0.13rem] h-[0.75rem] w-[1.25rem]" />
+                                            <Img src={img_search} alt="Search" className="my-[0.13rem] h-[0.75rem] w-[1.25rem]" />
                                         }
                                         suffix={
                                             searchBarValue4?.length > 0 ? (
@@ -986,7 +973,7 @@ export default function SecurityTokensSection() {
                                         Swap
                                     </Heading>
                                     <Img
-                                        src="images/img_settings_svgrepo_com.svg"
+                                        src={img_settings_svgrepo_com}
                                         alt="Settings Image"
                                         className="mr-[2.50rem] h-[1.75rem] w-[1.75rem]"
                                     />
@@ -996,7 +983,7 @@ export default function SecurityTokensSection() {
                                         <div className="flex justify-center">
                                             <div className="flex flex-1 items-center gap-[0.63rem]">
                                                 <Img
-                                                    src="images/img_info_circle_svgrepo_com_24x24.png"
+                                                    src={img_info_circle_svgrepo_com_24x24}
                                                     alt="Info Image"
                                                     className="h-[1.50rem] w-[1.50rem] object-cover"
                                                 />
@@ -1005,7 +992,7 @@ export default function SecurityTokensSection() {
                                                 </Heading>
                                             </div>
                                             <Img
-                                                src="images/img_close_md_svgrepo_com.svg"
+                                                src={img_close_md_svgrepo_com}
                                                 alt="Close Image"
                                                 className="h-[1.50rem] w-[1.50rem]"
                                             />
@@ -1034,7 +1021,7 @@ export default function SecurityTokensSection() {
                                             />
                                         </div>
                                         <Img
-                                            src="images/img_light_bulb.svg"
+                                            src={img_light_bulb}
                                             alt="Lightbulb Image"
                                             className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[3.00rem] w-[3.00rem]"
                                         />
@@ -1050,7 +1037,7 @@ export default function SecurityTokensSection() {
                                                         1 USDC.e PER 2.624 MATIC
                                                     </Heading>
                                                     <Img
-                                                        src="images/img_frame.png"
+                                                        src={img_frame}
                                                         alt="Frame Image"
                                                         className="h-[1.25rem] w-[1.25rem] object-cover"
                                                     />
@@ -1152,7 +1139,7 @@ export default function SecurityTokensSection() {
                                     <div className="flex items-center justify-center">
                                         <div className="flex flex-1 items-center gap-[1.25rem]">
                                             <Img
-                                                src="images/img_arrow_down_brand_color_1.svg"
+                                                src={img_arrow_down_brand_color_1}
                                                 alt="Arrow Down Nine"
                                                 className="h-[1.50rem] w-[1.50rem]"
                                             />
@@ -1165,7 +1152,7 @@ export default function SecurityTokensSection() {
                                             </Heading>
                                         </div>
                                         <Img
-                                            src="images/img_close_md_svgrepo_com.svg"
+                                            src={img_close_md_svgrepo_com}
                                             alt="Close Image"
                                             className="h-[1.50rem] w-[1.50rem]"
                                         />
@@ -1203,7 +1190,7 @@ export default function SecurityTokensSection() {
                                     <div className="flex items-center self-stretch">
                                         <div className="flex flex-1 items-center gap-[1.25rem]">
                                             <Img
-                                                src="images/img_arrow_down_brand_color_1.svg"
+                                                src={img_arrow_down_brand_color_1}
                                                 alt="Arrow Down"
                                                 className="h-[1.50rem] w-[1.50rem]"
                                             />
@@ -1216,7 +1203,7 @@ export default function SecurityTokensSection() {
                                             </Heading>
                                         </div>
                                         <Img
-                                            src="images/img_close_md_svgrepo_com.svg"
+                                            src={img_close_md_svgrepo_com}
                                             alt="Close Image"
                                             className="h-[1.50rem] w-[1.50rem]"
                                         />
@@ -1256,3 +1243,4 @@ export default function SecurityTokensSection() {
         </>
     );
 }
+

@@ -67,66 +67,17 @@ function PopularMarketsPage() {
                 >
                     Popular Markets
                 </Heading>
-                <div className="w-full">
-                    <div className='flex flex-1 w-full'>
-                        <Input
-                            size="xs"
-                            shape="square"
-                            name="Search Field"
-                            placeholder={`Search...`}
-                            value={searchBarValue1}
-                            onChange={(e) => setSearchBarValue1(e.target.value)}
-                            prefix={
-                                <Img
-                                    src={img_search}
-                                    alt="Search"
-                                    className="my-[0.13rem] h-[20px] w-[20px]"
-                                />
-                            }
-                            suffix={
-                                searchBarValue1?.length > 0 ? (
-                                    <CloseSVG onClick={() => setSearchBarValue1("")} height={24} fillColor="#828282ff"
-                                        className='cursor-pointer p-[3px]'
-                                    />
-                                ) : null
-                            }
-                            className="w-full gap-[0.50rem] border px-[0.75rem] capitalize tracking-[0.00rem] md:w-full"
-                            inputClassNames={`bg-transparent border-none text-[14px] focus:ring-0 text-white-a700`}
-                        />
-                        <SelectBox
-                            shape="square"
-                            indicator={
-                                <Img src={img_arrowdown} alt="Arrow Down" className="h-[0.75rem] w-[0.50rem]" />
-                            }
-                            value={selectedMarket || ""}
-                            onChange={(e) => setSelectedMarket(e.value)}
-                            name="Industry Dropdown"
-                            placeholder={`All Markets`}
-                            options={dropDownOptions}
-                            className="ml-[3.00rem] w-[12%] gap-[0.50rem] border border-solid border-gray-900_02 px-[0.75rem] font-bold capitalize tracking-[0.00rem] md:ml-0 md:w-full"
-                        />
-                    </div>
-                    {/* Content */}
-                    <div className={`mt-[2rem]`}>
-                        <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[1.688rem]">
-                            {popularMarketList?.map((market, index) => (
-                                <PopularMarketCard
-                                    onCardClick={() => navigate(`${ROUTE_PATH.POPULAR_MARKETS}/${market.id}`)}
-                                    key={`popular-market-${index}`}
-                                    cardImage={market.cardImage}
-                                    publicSalesButton={market.publicSalesButton}
-                                    securityTokenText={market.securityTokenText}
-                                    priceText={market.priceText}
-                                    totalPoolText={`Total Pool`}
-                                    totalPoolValue={market.totalPoolValue}
-                                    potentialText={`Potential ROI`}
-                                    potentialValue={market.potentialValue}
-                                />
-                            ))}
-                        </div>
-                    </div>
 
-                </div>
+                <Heading
+                    size="heading7xl"
+                    as="h1"
+                    className="text-[2.50rem] font-bold text-gray-50 md:text-[2.38rem] sm:text-[2.25rem]"
+                >
+                    Coming Soon..
+                </Heading>
+
+                
+
             </div>
         </div>
     )

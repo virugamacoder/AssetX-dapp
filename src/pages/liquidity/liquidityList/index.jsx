@@ -42,47 +42,6 @@ function LiquidityPage() {
                 </Link> */}
             </div>
             <div className="w-full flex flex-col items-center border border-solid border-gray-900_02 bg-gray-900_01 p-[1.88rem] md:w-full sm:p-[1.25rem]">
-                {disclaims && <div className="self-stretch border border-solid border-gray-900_02 bg-gray-900 p-[1.25rem]">
-                    <div className="flex flex-col gap-[1.00rem]">
-                        <div className="flex justify-center">
-                            <div className="flex flex-1 items-center gap-[0.63rem]">
-                                <Img
-                                    src="images/img_info_circle_svgrepo_com_24x24.png"
-                                    alt="Info Image"
-                                    className="h-[1.50rem] w-[1.50rem] object-cover"
-                                />
-                                <Heading size="headingxl" as="h6" className="text-[1.13rem] font-bold text-white-a700">
-                                    Disclaimer
-                                </Heading>
-                            </div>
-                            <Button
-                                style={{ padding: '0', height: 'auto' }}
-                                onClick={() => setDisclaims(false)}
-                            >
-                                <Img
-                                    src="images/img_close_md_svgrepo_com.svg"
-                                    alt="Close Image"
-                                    className="h-[1.50rem] w-[1.50rem]"
-                                />
-                            </Button>
-                        </div>
-                        <Heading
-                            as="p"
-                            style={{
-                                color: `var(--brand_color_1)`,
-                                fontFamily: `Inter`,
-                            }}
-                            className="font-inter text-[0.88rem] font-normal leading-[1.25rem] text-brand_color-1"
-                        >
-                            By accessing and utilizing Liquidity Pools, you acknowledge and accept the inherent risks
-                            involved, including market volatility, impermanent loss, regulatory changes and/or smart
-                            contract vulnerabilities. IX Swap makes no guarantees of profit and expressly disclaims
-                            responsibility for any losses you may suffer due to such risks. You acknowledge that your access
-                            and use of Liquidity Pools shall be at your own risk, and you should conduct independent
-                            research and are encouraged to seek professional advice before doing so.
-                        </Heading>
-                    </div>
-                </div>}
                 {currentWalletAddress ?
                     <Button
                         shape="square"

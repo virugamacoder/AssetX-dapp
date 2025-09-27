@@ -44,8 +44,11 @@ import img_image_12 from "./img_image_12.png";
 import img_image_20x20 from "./img_image_20x20.png";
 import img_close from "./img_close.svg";
 import img_close_md_svgrepo_com from "./img_close_md_svgrepo_com.svg";
+import img_settings_svgrepo_com from "./img_settings_svgrepo_com.svg";
 import img_vector_20x20 from "./img_vector_20x20.png";
 import img_light_bulb from "./img_light_bulb.svg";
+import img_frame from "./img_frame.png";
+import img_info_circle_svgrepo_com_24x24 from "./img_info_circle_svgrepo_com_24x24.png";
 import img_calendar_svgrepo_com from "./img_calendar_svgrepo_com.png";
 import img_image_1_40x36 from "./img_image_1_40x36.png";
 import img_image_5_40x40 from "./img_image_5_40x40.png";
@@ -130,8 +133,11 @@ export {
     img_image_20x20,
     img_close,
     img_close_md_svgrepo_com,
+    img_settings_svgrepo_com,
     img_vector_20x20,
     img_light_bulb,
+    img_frame,
+    img_info_circle_svgrepo_com_24x24,
     img_calendar_svgrepo_com,
     img_image_1_40x36,
     img_image_5_40x40,
