@@ -96,26 +96,53 @@ const kadenaChain20 = {
 };
 
 const kadenaChain21 = {
-  id: 5921,
-  name: 'Kadena Chain 21',
-  network: 'kadena-21',
+      id: 5921,
+      name: 'Kadena Chain 21',
+      network: 'kadena-21',
+      nativeCurrency: {
+        decimals: 18,
+        name: 'Kadena',
+        symbol: 'KDA',
+      },
+      rpcUrls: {
+        default: {
+          http: ['https://evm-testnet.chainweb.com/chainweb/0.0/evm-testnet/chain/21/evm/rpc'],
+        },
+        public: {
+          http: ['https://evm-testnet.chainweb.com/chainweb/0.0/evm-testnet/chain/21/evm/rpc'],
+        },
+      },
+      blockExplorers: {
+        default: {
+          name: 'Kadena Explorer',
+          url: 'https://explorer.chainweb.com',
+        },
+      },
+      testnet: true,
+};
+
+
+const rootstock_testnet = {
+  id: 31,
+  name: 'Rootstock Testnet',
+  network: 'rootstock-testnet',
   nativeCurrency: {
     decimals: 18,
-    name: 'Kadena',
-    symbol: 'KDA',
+    name: 'Rootstock',
+    symbol: 'tRBTC',
   },
   rpcUrls: {
     default: {
-      http: ['https://evm-testnet.chainweb.com/chainweb/0.0/evm-testnet/chain/21/evm/rpc'],
+      http: ['https://public-node.testnet.rsk.co'],
     },
     public: {
-      http: ['https://evm-testnet.chainweb.com/chainweb/0.0/evm-testnet/chain/21/evm/rpc'],
+      http: ['https://public-node.testnet.rsk.co'],
     },
   },
   blockExplorers: {
     default: {
-      name: 'Kadena Explorer',
-      url: 'https://explorer.chainweb.com',
+      name: 'Rootstock Explorer',
+      url: '  ',
     },
   },
   testnet: true,
@@ -124,12 +151,13 @@ const kadenaChain21 = {
 export const config = getDefaultConfig({
     appName: 'My RainbowKit App',
     projectId: WALLETCONNECT_PROJECT_ID,
-    chains: [sepolia, base, kadenaChain20, kadenaChain21],
+    chains: [sepolia, base, kadenaChain20, kadenaChain21 , rootstock_testnet],
     transports: {
         [sepolia.id]: http(`https://eth-sepolia.g.alchemy.com/v2/w9-AuglMlwA3N5eQ-iIjeTqfZLBOzlPz`),
         [base.id]: http('https://mainnet.base.org'),
         [kadenaChain20.id]: http('https://evm-testnet.chainweb.com/chainweb/0.0/evm-testnet/chain/20/evm/rpc'),
         [kadenaChain21.id]: http('https://evm-testnet.chainweb.com/chainweb/0.0/evm-testnet/chain/21/evm/rpc'),
+        [rootstock_testnet.id]: http('https://public-node.testnet.rsk.co'),
         // [sepolia.id]: http("https://eth-sepolia.g.alchemy.com/v2/gBBwftqNWwma4VOcaYivkywima42GT8h"),
     },
     wallets: [{

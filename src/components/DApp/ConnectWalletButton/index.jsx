@@ -19,7 +19,7 @@ function ConnectWalletButton() {
             if (!localStorage.getItem("connected")) {
                 localStorage.setItem("connected", "true");
                 console.log("redirect")
-                navigate(ROUTE_PATH.KYC)
+                // navigate(ROUTE_PATH.KYC)
             }
         }
         return () => {
